@@ -5,14 +5,12 @@ import (
 	"net/http"
 )
 
-// Track represents a music track
 type Track struct {
 	ID     string `json:"id"`
 	Title  string `json:"title"`
 	Artist string `json:"artist"`
 }
 
-// GetTracks returns a list of tracks
 func GetTracks(w http.ResponseWriter, r *http.Request) {
 	tracks := []Track{
 		{ID: "1", Title: "Track One", Artist: "Artist One"},
