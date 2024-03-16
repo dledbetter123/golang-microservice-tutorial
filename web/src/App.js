@@ -3,9 +3,11 @@ import './App.css';
 
 function App() {
   const [users, setUsers] = useState([]);
-  const url = process.env.REACT_APP_API_URL;
+  const userUrl = process.env.REACT_APP_USER_SERVICE_URL;
+  const musicUrl = process.env.REACT_APP_MUSIC_SERVICE_URL;
+  const playlistUrl = process.env.REACT_APP_PLAYLIST_SERVICE_URL;
   useEffect(() => {
-    fetch(url+'/users')
+    fetch(userUrl+'/users')
       .then(response => response.json())
       .then(data => setUsers(data));
   }, []);

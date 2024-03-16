@@ -2,9 +2,8 @@ package main
 
 import (
 	"fmt"
-	"net/http"
-
 	"golang-microservice-tutorial/internal/userService/handler"
+	"net/http"
 )
 
 // corsMiddleware adds CORS headers to api handler responses

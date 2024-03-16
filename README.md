@@ -1,6 +1,10 @@
 # Traditional Go Project Structure
 
 ```plaintext
+docker --version
+```
+
+```plaintext
 /cloud-native-app
 ├── cmd
 │   ├── serviceA

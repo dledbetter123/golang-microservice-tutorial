@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  user-service:
+    build:
+      context: .                   # Set the build context to the project root
+      dockerfile: services/userService/Dockerfile
+    ports:
+      - "8080:8080"
+
+  music-service:
+    build:
+      context: .                   # Set the build context to the project root
+      dockerfile: services/musicService/Dockerfile
+    ports:
+      - "8081:8081"
+
+  playlist-service:
+    build:
+      context: .                   # Set the build context to the project root
+      dockerfile: services/playlistService/Dockerfile
+    ports:
+      - "8082:8082"
